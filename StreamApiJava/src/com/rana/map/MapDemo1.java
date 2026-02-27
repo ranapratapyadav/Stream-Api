@@ -10,13 +10,13 @@ public class MapDemo1
 	public static void main(String[] args) 
 	{
 		String[] fruits= {"Apple","Banana","Grapes","pear","Pomegranate"};
-//		Arrays.stream(fruits)
-//			.map(fruit->fruit.length())
-//				.forEach(IO::println);
+		Arrays.stream(fruits)
+		.map(fruit->fruit.length())
+			.forEach(IO::println);
 		
-		Object [] fruit=Arrays.stream(fruits)
-							.map(fr->fr.length())
-								.toArray();
-		System.out.println(Arrays.toString(fruit));
-	}
+//		Object [] fruit=Arrays.stream(fruits)
+//							.map(fr->fr.length())
+//								.toArray();
+//		System.out.println(Arrays.toString(fruit));
+}
 }
